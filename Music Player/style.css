@@ -1,0 +1,76 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins';
+}
+
+body{
+    background-color: rgb(226, 200, 247);
+}
+
+.main{
+    width:350px;
+    max-width: 90%;
+    border-radius: 1rem;
+    background-color: rgb(226, 200, 247);
+    box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.1),-6px -6px 12px -1px rgba(255, 255, 255, 0.7);
+}
+
+.cover{
+    width: 230px;
+    height:230px;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    transition:transform 0.3 ease-in-out;
+    box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.2),-6px -6px 10px -1px rgba(255,255,255,0.7);
+}
+
+img{
+    width:100%;
+    height:100%;
+    border-radius: 50%;
+    object-fit: cover;
+    padding: 0.3rem;
+}
+
+.cover:hover{
+    transform:scale(1.05);
+}
+
+.music-titles .title{
+    font-size: 19px;
+}
+
+.music-titles .artist{
+    font-size: 17px;
+    opacity:0.7;
+}
+
+.progress{
+    margin:0 1.5rem;
+    height:0.5rem;
+    background-color: rgb(218, 166, 207);
+}
+
+.bg-color{
+      background-color: rgb(179, 87, 156);
+}
+
+.controls button{
+    font-size: 1.2rem;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    box-shadow: 0px 6px 10px -1px rgba(0,0,0,0.1),0px -6px 10px -1px rgba(0,0,0,0.1);
+    border:none;
+}
+
+.controls button i{
+    opacity: 0.8;
+    transition: transform 0.3 ease-in;
+}
+
+.controls button:hover{
+    transform:scale(1.1);
+}

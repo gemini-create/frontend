@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Language Translator</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <link href="style.css" rel="stylesheet">
+
+    </head>
+    <body class=" d-flex flex-column justify-content-center align-items-center min-vh-100">
+        <h1><b>Language Translator</b></h1>
+        <div class="main p-3 bg-white">
+            <div class="languages p-2 d-flex gap-2">
+                <select id="languageFrom" class="form-select flex-fill">
+                    <option value="af-ZA">Afrikaans (South Africa)</option>
+                    <option value="sq-AL">Albanian (Albania)</option>
+                    <option value="am-ET">Amharic (Ethiopia)</option>
+                    <option value="ar-SA">Arabic (Saudi Arabia)</option>
+                    <option value="hy-AM">Armenian (Armenia)</option>
+                    <option value="az-AZ">Azerbaijani (Azerbaijan)</option>
+                    <option value="bn-IN">Bengali (India)</option>
+                    <option value="bn-BD">Bengali (Bangladesh)</option>
+                    <option value="bg-BG">Bulgarian (Bulgaria)</option>
+                    <option value="ca-ES">Catalan (Spain)</option>
+                    <option value="zh-CN">Chinese (Simplified, China)</option>
+                    <option value="zh-TW">Chinese (Traditional, Taiwan)</option>
+                    <option value="hr-HR">Croatian (Croatia)</option>
+                    <option value="cs-CZ">Czech (Czech Republic)</option>
+                    <option value="da-DK">Danish (Denmark)</option>
+                    <option value="nl-NL">Dutch (Netherlands)</option>
+                    <option value="nl-BE">Dutch (Belgium)</option>
+                    <option value="en-US" selected>English (United States)</option>
+                    <option value="en-GB">English (United Kingdom)</option>
+                    <option value="en-IN">English (India)</option>
+                    <option value="fi-FI">Finnish (Finland)</option>
+                    <option value="fr-FR">French (France)</option>
+                    <option value="fr-CA">French (Canada)</option>
+                    <option value="de-DE">German (Germany)</option>
+                    <option value="el-GR">Greek (Greece)</option>
+                    <option value="gu-IN">Gujarati (India)</option>
+                    <option value="he-IL">Hebrew (Israel)</option>
+                    <option value="hi-IN">Hindi (India)</option>
+                    <option value="hu-HU">Hungarian (Hungary)</option>
+                    <option value="id-ID">Indonesian (Indonesia)</option>
+                    <option value="it-IT">Italian (Italy)</option>
+                    <option value="ja-JP">Japanese (Japan)</option>
+                    <option value="kn-IN">Kannada (India)</option>
+                    <option value="ko-KR">Korean (South Korea)</option>
+                    <option value="lv-LV">Latvian (Latvia)</option>
+                    <option value="lt-LT">Lithuanian (Lithuania)</option>
+                    <option value="ml-IN">Malayalam (India)</option>
+                    <option value="mr-IN">Marathi (India)</option>
+                    <option value="ne-NP">Nepali (Nepal)</option>
+                    <option value="nb-NO">Norwegian (Norway)</option>
+                    <option value="pa-IN">Punjabi (India)</option>
+                    <option value="pl-PL">Polish (Poland)</option>
+                    <option value="pt-PT">Portuguese (Portugal)</option>
+                    <option value="pt-BR">Portuguese (Brazil)</option>
+                    <option value="ro-RO">Romanian (Romania)</option>
+                    <option value="ru-RU">Russian (Russia)</option>
+                    <option value="si-LK">Sinhala (Sri Lanka)</option>
+                    <option value="sk-SK">Slovak (Slovakia)</option>
+                    <option value="sl-SI">Slovenian (Slovenia)</option>
+                    <option value="es-ES">Spanish (Spain)</option>
+                    <option value="es-MX">Spanish (Mexico)</option>
+                    <option value="sv-SE">Swedish (Sweden)</option>
+                    <option value="ta-IN">Tamil (India)</option>
+                    <option value="te-IN">Telugu (India)</option>
+                    <option value="th-TH">Thai (Thailand)</option>
+                    <option value="tr-TR">Turkish (Turkey)</option>
+                    <option value="uk-UA">Ukrainian (Ukraine)</option>
+                    <option value="ur-PK">Urdu (Pakistan)</option>
+                    <option value="vi-VN">Vietnamese (Vietnam)</option>
+                </select>
+
+                <button class="switch control btn"><i class="fa-solid fa-right-left"></i></button>
+
+                <select class="form-select flex-fill" id="languageTo" name="langTo">
+                    <option value="af-ZA">Afrikaans (South Africa)</option>
+                    <option value="sq-AL">Albanian (Albania)</option>
+                    <option value="am-ET">Amharic (Ethiopia)</option>
+                    <option value="ar-SA">Arabic (Saudi Arabia)</option>
+                    <option value="hy-AM">Armenian (Armenia)</option>
+                    <option value="az-AZ">Azerbaijani (Azerbaijan)</option>
+                    <option value="bn-IN">Bengali (India)</option>
+                    <option value="bn-BD">Bengali (Bangladesh)</option>
+                    <option value="bg-BG">Bulgarian (Bulgaria)</option>
+                    <option value="ca-ES">Catalan (Spain)</option>
+                    <option value="zh-CN">Chinese (Simplified, China)</option>
+                    <option value="zh-TW">Chinese (Traditional, Taiwan)</option>
+                    <option value="hr-HR">Croatian (Croatia)</option>
+                    <option value="cs-CZ">Czech (Czech Republic)</option>
+                    <option value="da-DK">Danish (Denmark)</option>
+                    <option value="nl-NL">Dutch (Netherlands)</option>
+                    <option value="nl-BE">Dutch (Belgium)</option>
+                    <option value="en-US" selected>English (United States)</option>
+                    <option value="en-GB">English (United Kingdom)</option>
+                    <option value="en-IN">English (India)</option>
+                    <option value="fi-FI">Finnish (Finland)</option>
+                    <option value="fr-FR">French (France)</option>
+                    <option value="fr-CA">French (Canada)</option>
+                    <option value="de-DE">German (Germany)</option>
+                    <option value="el-GR">Greek (Greece)</option>
+                    <option value="gu-IN">Gujarati (India)</option>
+                    <option value="he-IL">Hebrew (Israel)</option>
+                    <option value="hi-IN">Hindi (India)</option>
+                    <option value="hu-HU">Hungarian (Hungary)</option>
+                    <option value="id-ID">Indonesian (Indonesia)</option>
+                    <option value="it-IT">Italian (Italy)</option>
+                    <option value="ja-JP">Japanese (Japan)</option>
+                    <option value="kn-IN">Kannada (India)</option>
+                    <option value="ko-KR">Korean (South Korea)</option>
+                    <option value="lv-LV">Latvian (Latvia)</option>
+                    <option value="lt-LT">Lithuanian (Lithuania)</option>
+                    <option value="ml-IN">Malayalam (India)</option>
+                    <option value="mr-IN">Marathi (India)</option>
+                    <option value="ne-NP">Nepali (Nepal)</option>
+                    <option value="nb-NO">Norwegian (Norway)</option>
+                    <option value="pa-IN">Punjabi (India)</option>
+                    <option value="pl-PL">Polish (Poland)</option>
+                    <option value="pt-PT">Portuguese (Portugal)</option>
+                    <option value="pt-BR">Portuguese (Brazil)</option>
+                    <option value="ro-RO">Romanian (Romania)</option>
+                    <option value="ru-RU">Russian (Russia)</option>
+                    <option value="si-LK">Sinhala (Sri Lanka)</option>
+                    <option value="sk-SK">Slovak (Slovakia)</option>
+                    <option value="sl-SI">Slovenian (Slovenia)</option>
+                    <option value="es-ES">Spanish (Spain)</option>
+                    <option value="es-MX">Spanish (Mexico)</option>
+                    <option value="sv-SE">Swedish (Sweden)</option>
+                    <option value="ta-IN">Tamil (India)</option>
+                    <option value="te-IN">Telugu (India)</option>
+                    <option value="th-TH">Thai (Thailand)</option>
+                    <option value="tr-TR">Turkish (Turkey)</option>
+                    <option value="uk-UA">Ukrainian (Ukraine)</option>
+                    <option value="ur-PK">Urdu (Pakistan)</option>
+                    <option value="vi-VN">Vietnamese (Vietnam)</option>
+                </select>
+            </div>
+
+            <div class="boxes px-2 d-flex">
+                <div class="translate-from p-2 border-1 border-secondary border-end d-flex flex-column flex-fill">
+                    <textarea class="w-100"  placeholder="Type Something..."></textarea>
+                    <div class="d-flex justify-content-between">
+                        <button class="control volumeFrom btn"><i class="fa-solid fa-volume-high"></i></button>
+                        <button class="control copy translate btn" data-bs-toggle="tooltip" data-bs-placement="right" title="Copy to clipboard">
+                            <i class="fa-solid fa-copy"></i></button>
+                    </div>
+                </div>
+
+                <div class="translate-to p-2 d-flex flex-column flex-fill">
+                    <textarea class="w-100"  placeholder="Translation" readonly></textarea>
+                    <div class="d-flex justify-content-between">
+                        <button class="control volumeTo btn"><i class="fa-solid fa-volume-high"></i></button>
+                        <button class="control copy translated btn" data-bs-toggle="tooltip" data-bs-placement="right" title="Copy to clipboard">
+                        <i class="fa-solid fa-copy"></i></button>
+                    </div>
+                </div>
+            </div>
+            <button class="translate-Btn p-2 mt-2 w-100 rounded-2">Translate</button>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
