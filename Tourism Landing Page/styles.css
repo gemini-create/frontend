@@ -1,0 +1,356 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Geneva, Tahoma, sans-serif; 
+}
+
+header{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),url("image/faisal\ mosque.jpg");
+    background-repeat: no-repeat;
+    background-attachment:scroll;
+    background-size: cover;
+    min-height: 100vh;  
+}
+
+.navigation{
+    display:flex;
+    justify-content:space-around;
+    padding:2rem 0 0 0;
+}
+
+.brand{
+    font-size:1.5rem;
+}
+
+li,.brand{
+    padding:0 30px;
+    margin: 0 15px;
+}
+
+li>a,.brand{
+    color:rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+li>a{
+    position:relative;
+    font-weight: bold;
+}
+
+li>a:hover{
+    font-size:1.1rem;
+    color:black;
+}
+
+.navigation li>a::after{
+    content:"";
+    position:absolute;
+    width:0%;
+    bottom:0;
+    left:0;
+    transition:0.3s width , 0.3s font-size ease-in-out;
+    height:1px;
+    background-color:rgb(246, 245, 250);   
+}
+
+.navigation li>a:hover::after{
+    width:100%;
+    font-size:1.3rem;
+}
+
+.intro{
+    font-size:larger;
+    margin:2rem;
+    position: absolute;
+    top: 50%;
+    transform: translate(0%, -50%); 
+    background-color: rgba(248, 247, 247, 0); 
+    color:aliceblue;
+    border-radius: 10px;
+}
+
+.intro h1{
+      font-family: "Lucida Calligraphy", script;   
+      font-size:5rem;
+      padding:15px 0;
+      font-weight: bold;
+}
+
+main{
+     
+     background: linear-gradient(135deg, #989faf,#c7d9e6);
+}
+
+.signup:hover,.explore:hover ,.login:hover{
+   transform: scale(1.1);
+}
+
+#destination-section{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)),url('image/destinations.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
+    padding-top:3rem;
+    
+}
+
+#destination-section .taglines,#package-section .taglines ,#contact-section .taglines, #about-us .taglines{
+     font-family: "Carattere", cursive;
+     color:#ffffff;
+     font-size: 3rem;
+     text-align: center;
+     padding-top:15px;
+}
+
+#destination-section h1{  
+      font-size:38px;
+      color:rgb(0, 0, 0);
+      font-weight: bold;
+}
+
+#destinations {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  padding: 2rem;
+  height:auto;
+}
+
+.destination {
+  text-align: center;
+  position: relative;
+}
+
+.destination p{
+    font-size:1.3rem;
+}
+
+.destination img {
+  width: 250px;
+  height: 250px;
+  object-fit:cover;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+.destination img:hover{
+    transform: scale(0.9);
+}
+
+.details{
+    display:none;
+    position: absolute; 
+    top: 85%;
+     left: 10%;
+    z-index: 10;
+    background-color: rgba(255, 255, 255, 0.5);
+    color:rgb(0, 0, 0);
+    padding:1rem;
+    width: 300px;
+    height:auto;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    font-size:1rem;
+}
+
+#signup .modal-content,#login .modal-content{
+    background-color:#dde1f0;
+    border-radius:0;
+}
+
+#signup .modal-title ,#login .modal-title{
+    margin-left: 35%;
+    margin-top:5%;
+}
+
+form{
+    font-size: 1rem; 
+    padding: 0 25px 0 25px;
+}
+
+label{
+    margin:3% 0 3% 0;
+}
+
+.accountExist a{
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#signup .btn-close, #login .btn-close {
+    margin-bottom:10%;
+}
+
+input,textarea{
+    width: 100%;
+    padding: 5px;
+    outline: none;
+    border: 2px solid rgb(204, 204, 204);
+}
+
+#package-section h1,#contact-section .taglines,#about-us{
+    margin-bottom: 2rem;
+
+}
+
+#contact-section,#package-section{
+    padding-top:4rem;
+}
+
+#packages{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap:1rem;
+    margin:1rem;
+}
+
+.pk{
+    width:22vw;
+    background-color: rgb(233, 235, 241);
+    border-radius:1rem; 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    transition:transform 0.5s ease-in-out;
+}
+
+.data{
+    padding:2rem;
+}
+
+.data h4{
+     color:#1b6092;
+}
+.carousel-item img{
+    border-radius:1rem; 
+}
+.pk:hover{
+    transform:scale(0.9);
+}
+
+#contact-us{
+    display:flex;    
+    justify-content:space-evenly;
+    flex-wrap: wrap;
+    gap:2rem;
+    padding:2rem;
+    position:relative;
+}
+
+.info{
+    width:30vw;
+    background-color: rgb(233, 235, 241);
+    padding:2rem;
+    border-radius:1rem; 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    height:60vh;
+    transition:transform 0.3s ease-in-out;
+}
+
+.info i {
+    margin-right: 10px;
+    font-size: 1.2rem; 
+}
+.info span{
+    font-size:1.1rem;
+}
+
+.message-us{
+    width: 40vw;
+    background-color: rgb(233, 235, 241);
+    border-radius:1rem; 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    transition:transform 0.5s ease-in-out;
+}
+.info:hover, .message-us:hover{
+    transform:scale(0.9);
+}
+#about-us{
+    margin:4rem 0 6rem 0;
+}
+
+#about-us h1{
+    margin:0 0 4rem 0;
+}
+
+#about{
+    display:flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+#pricing,#fast-booking,#guided-tours{
+    width:30vw;
+    padding:1rem;
+    margin:1rem;
+  
+}
+
+#pricing i, #fast-booking i, #guided-tours i {
+    display: block;
+    text-align: center;
+    font-size: 3rem; 
+    margin: 0 auto 1rem auto;
+    color:#1b6092;
+    transition:transform 3s;
+}
+
+#pricing i:hover, #fast-booking i:hover, #guided-tours i:hover{
+    transform: rotate(360deg);
+}
+
+footer{
+    
+    background: linear-gradient(135deg, #638be2,#0c3858);
+    font-size:large;
+    color:white;
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding:5rem;
+    min-height:70vh;
+}
+
+.follow ul :hover{
+    color:black;
+}
+
+@media (min-width: 769px)  {
+
+  .intro{
+   max-width: 39vw; 
+  }
+}
+
+@media (max-width: 769px) {
+  /* Applies when screen width is 768px or smaller */
+  .intro{
+   max-height: 70vh; 
+   max-width: 60vw; 
+  }
+  .details{
+   position: static; 
+   float:right;
+   margin:2%;
+  }
+  .pk{
+    width:100%;
+    margin:auto;
+    
+  }
+  .info,.message-us{
+    margin:auto;
+    width:100%;
+  }
+  .location,.quick,.follow,#pricing,#fast-booking,#guided-tours{
+    margin:auto;
+    width:100%;
+  }
+
+}
