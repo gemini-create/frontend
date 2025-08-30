@@ -24,32 +24,25 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
-<body class="container-fluid-lg" data-bs-spy="scroll" data-bs-target=".navigation" data-bs-offset="50">
+<body>
     <header id="home">
-        <div class="navigation">
-        <nav class="navbar navbar-expand-lg">
-                <a href="#" class="brand"><b>Pak Travels</b></a>
+        <nav class="navbar navbar-expand-lg text-center p-3">
+            <a class="navbar-brand fw-bold" href="#home">Pak Travels</a>
 
-                 <button class="navbar-toggler mx-auto" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-                <div class=" collapse navbar-collapse " id="collapsibleNavbar"> 
-                    <ul class="nav">
-                        <li><a href="#home">Home.</a></li>
-                        <li><a href="#destination-section">Destinations.</a></li>
-                        <li><a href="#package-section">Packages.</a></li>
-                        <li><a href="#contact-section">Contact Us.</a></li>
-                        <li><a href="#about-us">About Us.</a></li>
-                    </ul>
-                    <div>
-                        <button class="signup btn btn-primary mx-3" data-bs-toggle="modal" data-bs-target="#signup">Sign Up</button>
-                        <button class="login btn btn-primary d-none" data-bs-toggle="modal" data-bs-target="#login">Login</button>
-                    </div>
-                </div>
-            <hr>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link fw-bold active" href="#home">Home.</a></li>
+                    <li class="nav-item"><a class="nav-link fw-bold" href="#destination-section">Destinations.</a></li>
+                    <li class="nav-item"><a class="nav-link fw-bold" href="#package-section">Packages.</a></li>
+                    <li class="nav-item"><a class="nav-link fw-bold" href="#contact-section">Contact Us.</a></li>
+                    <li class="nav-item"><a class="nav-link fw-bold" href="#about-us">About Us.</a></li>
+                </ul>
+            </div>
         </nav>
-       </div>
 
         <div class="modal" id="signup">
            <div class="modal-dialog"> 
@@ -152,7 +145,8 @@
         <div class="intro">
             <h1>Pakistan</h1>
             <p><i>Explore Pakistan like never before — mountains, heritage, and hospitality await you.</i></p>
-            <a href="#destination-section" class="btn btn-primary explore">Let's Explore <i class="fa-solid fa-arrow-right"></i></a>
+            <a href="#destination-section" class="btn btn-primary explore me-2">Let's Explore <i class="fa-solid fa-arrow-right"></i></a>
+            <button class="signup btn btn-primary px-4" data-bs-toggle="modal" data-bs-target="#signup">Sign Up</button>
         </div>
     </header>
 
@@ -163,7 +157,7 @@
          <br>
          <div id="destinations">
            <div class="destination">
-                <img src="image/babusar top.jpeg" alt="babusar top" title="Click to view details">
+                <img src="image/babusar top.jpg" alt="babusar top" title="Click to view details">
                 <div class="details">
                     <h5><b>"Babusar Top"</b></h5>
                     <p><b>Location:</b>Gilgit-Baltistan</p>
@@ -173,7 +167,7 @@
             </div>
 
             <div class="destination" id="multan">
-                <img src="image/multan.jpeg" alt="Shah Rukh-e-Alam Tomb"> 
+                <img src="image/multan.jpg" alt="Shah Rukh-e-Alam Tomb"> 
                 <div class="details">
                     <h5><b>"Multan - City of Saints"</b></h5>
                     <p><b>Location:</b> Punjab</p>
@@ -183,7 +177,7 @@
             </div>
 
             <div class="destination">
-                <img src="image/hunza.jpeg" alt="Hunza"> 
+                <img src="image/hunza.jpg" alt="Hunza"> 
                 <div class="details">
                     <h5><b>"Hunza Valley"</b></h5>
                     <p><b>Location:</b> Gilgit-Baltistan</p>
@@ -193,7 +187,7 @@
            </div>
 
             <div class="destination">
-                <img src="image/islamabad.jpeg" alt="Islamabad"> 
+                <img src="image/islamabad.jpg" alt="Islamabad"> 
                 <div class="details">
                     <h5><b>"Islamabad - The Capital"</b></h5>
                     <p><b>Location:</b> Federal Territory</p>
@@ -203,7 +197,7 @@
             </div>
 
             <div class="destination">
-                <img src="image/lahore.jpeg" alt="Minar-e-Pakistan,Lahore">
+                <img src="image/lahore.jpg" alt="Minar-e-Pakistan,Lahore">
                 <div class="details">
                     <h5><b>"Lahore - Heart of Pakistan"</b></h5>
                     <p><b>Location:</b> Punjab</p>
@@ -213,7 +207,7 @@
            </div>
 
             <div class="destination">
-                <img src="image/swat.jpeg" alt="Kalam Valley,Swat"> 
+                <img src="image/swat.jpg" alt="Kalam Valley,Swat"> 
                 <div class="details">
                     <h5><b>"Swat - Switzerland of the East"</b></h5>
                     <p><b>Location:</b> Khyber Pakhtunkhwa</p>
@@ -223,7 +217,7 @@
             </div>
 
             <div class="destination">
-                <img src="image/Karachi Pakistan.jpeg" alt="Karachi">
+                <img src="image/Karachi.jpg" alt="Karachi">
                 <div class="details">
                     <h5><b>"Karachi - The City of Lights"</b></h5>
                     <p><b>Location:</b> Sindh</p>
@@ -233,7 +227,7 @@
             </div>
 
             <div class="destination">
-                <img src="image/MURREE HILLS,PAKISTAN.jpeg" alt="Murree Hills">
+                <img src="image/Muree Hills Pakistan.jpg" alt="Murree Hills">
                 <div class="details">
                     <h5><b>"Murree - Queen of Hills"</b></h5>
                     <p><b>Location:</b> Punjab</p>
@@ -243,7 +237,7 @@
             </div>
 
             <div class="destination">
-                <img src="image/Neelum valley,Kashmir.jpeg" alt="Neelam Valley ">
+                <img src="image/Neelam Valley.jpg" alt="Neelam Valley ">
                 <div class="details">
                     <h5><b>"Neelum Valley"</b></h5>
                     <p><b>Location:</b> Azad Kashmir</p>
@@ -254,7 +248,7 @@
             </div>
 
              <div class="destination">
-                <img src="image/peshawar.jpeg" alt="Khyber Pass,Peshawar">
+                <img src="image/peshawar.jpg" alt="Khyber Pass,Peshawar">
                 <div class="details">
                     <h5><b>"Peshawar - City of Culture"</b></h5>
                     <p><b>Location:</b> Khyber Pakhtunkhwa</p>
@@ -279,43 +273,43 @@
                             </div>
 
                             <div class="carousel-item">
-                                <img src="image/Shalimar Gardens, Lahore - Wikipedia.jpeg" alt="Shalimar Gardens,Lahore" title="Shalimar Garden,lahore" class="d-block" style="width:100%">
+                                <img src="image/Shalimar Bagh.jpg" alt="Shalimar Gardens,Lahore" title="Shalimar Garden,lahore" class="d-block" style="width:100%">
                             </div>
 
                             <div class="carousel-item">
-                                <img src="image/New Food Street_ Lahore.jpeg" alt="Food Street,Lahore" title="Food Street,lahore"  class="d-block" style="width:100%">
+                                <img src="image/foodStreetLahore.jpg" alt="Food Street,Lahore" title="Food Street,lahore"  class="d-block" style="width:100%">
                             </div>
 
                               <div class="carousel-item">
-                                <img src="image/Clifton Beach,Karachi.jpeg" alt="Clifton Beach, Karachi" title="Clifton Beach, Karachi" class="d-block" style="width:100%">
+                                <img src="image/Clifton Beach.jpg" alt="Clifton Beach, Karachi" title="Clifton Beach, Karachi" class="d-block" style="width:100%">
                             </div>
 
                               <div class="carousel-item">
-                                <img src="image/Mohata Palace, Karachi.jpeg" alt="Mohatta Palace, Karachi" title="Mohatta Palace, Karachi" class="d-block" style="width:100%">
+                                <img src="image/Mohatta Palace,Karachi.jpg" alt="Mohatta Palace, Karachi" title="Mohatta Palace, Karachi" class="d-block" style="width:100%">
                             </div>
 
                               <div class="carousel-item">
-                                <img src="image/Karachi Pakistan.jpeg" alt="Quaid Mausoleum, Karachi" title="Quaid Mausoleum, Karachi" class="d-block" style="width:100%">
+                                <img src="image/Karachi.jpg" alt="Quaid Mausoleum, Karachi" title="Quaid Mausoleum, Karachi" class="d-block" style="width:100%">
                             </div>
 
                               <div class="carousel-item">
-                                <img src="image/daman e koh.jpg" alt="Daman-e-Koh, Islamabad" title="Daman-e-Koh, Islamabad" class="d-block" style="width:100%">
+                                <img src="image/" alt="Daman-e-Koh, Islamabad" title="Daman-e-Koh, Islamabad" class="d-block" style="width:100%">
                             </div>
 
                               <div class="carousel-item">
-                                <img src="image/Margalla Hills.jpeg" alt="Margalla Hills, Islamabad" title="Margalla Hills, Islamabad" class="d-block" style="width:100%">
+                                <img src="image/Margalla Hills.jpg" alt="Margalla Hills, Islamabad" title="Margalla Hills, Islamabad" class="d-block" style="width:100%">
                             </div>
 
                               <div class="carousel-item">
-                                <img src="image/monument.jpeg" alt="Monument, Islamabad" title="Monument, Islamabad" class="d-block" style="width:100%">
+                                <img src="image/islamabad.jpg" alt="Monument, Islamabad" title="Monument, Islamabad" class="d-block" style="width:100%">
                             </div>
 
                               <div class="carousel-item">
-                                <img src="image/Multan fort Pakistan.jpeg" alt="Multan Fort, Multan" title="Multan Fort, Multan" class="d-block" style="width:100%">
+                                <img src="image/Multan fort Pakistan.jpg" alt="Multan Fort, Multan" title="Multan Fort, Multan" class="d-block" style="width:100%">
                             </div>
 
                             <div class="carousel-item">
-                                <img src="image/Bala Fort.jpeg" alt="Bala Hisar Fort, Peshawar" title="Bala Hisar Fort, Peshawar" class="d-block" style="width:100%">
+                                <img src="image/Bala Fort.jpg" alt="Bala Hisar Fort, Peshawar" title="Bala Hisar Fort, Peshawar" class="d-block" style="width:100%">
                             </div>
                         </div>
                                     
@@ -348,11 +342,11 @@
                         <!--carousel -->
                         <div class="carousel-inner">
                             <div class="carousel-item ">
-                                <img src="image/Baltit fort hunza pakistan.jpeg" alt="baltit fort, hunza" title="baltit fort, hunza" class="d-block" style="width:100%">
+                                <img src="image/Baltit fort.jpg" alt="baltit fort, hunza" title="baltit fort, hunza" class="d-block" style="width:100%">
                             </div>
 
                             <div class="carousel-item">
-                                <img src="image/attabad lake.jpg" alt="Attabad lake,Hunza" title="Attabad Lake,Hunza" class="d-block" style="width:100%">
+                                <img src="image/Attabad lake, Hunza.jpg" alt="Attabad lake,Hunza" title="Attabad Lake,Hunza" class="d-block" style="width:100%">
                             </div>
 
                             <div class="carousel-item">
@@ -360,39 +354,39 @@
                             </div>
 
                              <div class="carousel-item ">
-                                <img src="image/shangrila resort.jpg" alt="Shangrila Resort, Skardu" title="Shangrila Resort, Skardu" class="d-block" style="width:100%">
+                                <img src="image/Shangri-la resort skardu.jpg" alt="Shangrila Resort, Skardu" title="Shangrila Resort, Skardu" class="d-block" style="width:100%">
                             </div>
 
                             <div class="carousel-item">
-                                <img src="image/Deosai National Park, Gilgit Pakistan.jpeg" alt="Deosai National Park,Skardu" title="Deosai National Park,Skardu" class="d-block" style="width:100%">
+                                <img src="image/deosai national park.jpg" alt="Deosai National Park,Skardu" title="Deosai National Park,Skardu" class="d-block" style="width:100%">
                             </div>
 
                             <div class="carousel-item active">
-                                <img src="image/Fairy Meadows gilgit Pakistan.jpeg" alt="Fairy Meadows" title="Fairy Meadows" class="d-block" style="width:100%">
+                                <img src="image/Fairy Meadows.jpg" alt="Fairy Meadows" title="Fairy Meadows" class="d-block" style="width:100%">
                             </div>
 
                              <div class="carousel-item">
-                                <img src="image/kalam.jpeg" alt="Kalam valley,swat" title="Kalam valley,swat" class="d-block" style="width:100%">
+                                <img src="image/swat.jpg" alt="Kalam valley,swat" title="Kalam valley,swat" class="d-block" style="width:100%">
                             </div>
 
                             <div class="carousel-item">
-                                <img src="image/Malamjabba Ski resort , Swat Valley - Pakistan.jpeg" alt="MalamJabba, Swat" title="MalamJabba, Swat" class="d-block" style="width:100%">
+                                <img src="image/Malam Jabba.jpg" alt="MalamJabba, Swat" title="MalamJabba, Swat" class="d-block" style="width:100%">
                             </div>
 
                             <div class="carousel-item">
-                                <img src="image/Mahodand Lake.jpeg" alt="Mahodand Lake,Swat" title="Mahodand Lake,Swat" class="d-block" style="width:100%">
+                                <img src="image/Mahodand Lake.jpg" alt="Mahodand Lake,Swat" title="Mahodand Lake,Swat" class="d-block" style="width:100%">
                             </div>
 
                              <div class="carousel-item ">
-                                <img src="image/Sharda -Kashmir-Pakistan.jpeg" alt="Sharda, Kashmir" title="Sharda, Kashmir" class="d-block" style="width:100%">
+                                <img src="image/Sharda -Kashmir-Pakistan.jpg" alt="Sharda, Kashmir" title="Sharda, Kashmir" class="d-block" style="width:100%">
                             </div>
 
                             <div class="carousel-item">
-                                <img src="image/Rati Gali Lake.jpeg" alt="Ratti Gali, Kashmir" title="Ratti Gali, Kashmir" class="d-block" style="width:100%">
+                                <img src="image/Rati Gali Azad Kashmir _.jpg" alt="Ratti Gali, Kashmir" title="Ratti Gali, Kashmir" class="d-block" style="width:100%">
                             </div>
 
                             <div class="carousel-item">
-                                <img src="image/Areng kel.jpeg" alt="Arang Kel,Kashmir" title="Arang Kel,Kashmir" class="d-block" style="width:100%">
+                                <img src="image/Areng kel.jpg" alt="Arang Kel,Kashmir" title="Arang Kel,Kashmir" class="d-block" style="width:100%">
                             </div>
                         </div>
                                     
@@ -425,23 +419,23 @@
                         <!--carousel -->
                         <div class="carousel-inner">
                             <div class="carousel-item ">
-                                <img src="image/Cholistan Desert Pakistan _ Travel Pakistan _ Travel.jpeg" alt="Cholistan Desert" title="Cholistan Desert" class="d-block" style="width:100%">
+                                <img src="image/cholistan.jpg" alt="Cholistan Desert" title="Cholistan Desert" class="d-block" style="width:100%">
                             </div>
 
                             <div class="carousel-item active">
-                                <img src="image/Khujerab Pass.jpeg" alt="Khunjerab Pass" title="Khunjerab Pass" class="d-block" style="width:100%">
+                                <img src="image/khunjerab pass.jpg" alt="Khunjerab Pass" title="Khunjerab Pass" class="d-block" style="width:100%">
                             </div>
 
                              <div class="carousel-item">
-                                <img src="image/Malamjabba Ski resort , Swat Valley - Pakistan.jpeg" alt="MalamJabba, Swat" title="MalamJabba, Swat" class="d-block" style="width:100%">
+                                <img src="image/Malam Jabba.jpg" alt="MalamJabba, Swat" title="MalamJabba, Swat" class="d-block" style="width:100%">
                             </div>
 
                             <div class="carousel-item">
-                                <img src="image/Deosai National Park, Gilgit Pakistan.jpeg" alt="Deosai National Park,Skardu" title="Deosai National Park,Skardu" class="d-block" style="width:100%">
+                                <img src="image/deosai national park.jpg" alt="Deosai National Park,Skardu" title="Deosai National Park,Skardu" class="d-block" style="width:100%">
                             </div>
 
                             <div class="carousel-item">
-                                <img src="image/Mohata Palace, Karachi.jpeg" alt="Mohatta Palace, Karachi" title="Mohatta Palace, Karachi" class="d-block" style="width:100%">
+                                <img src="image/Mohatta Palace,Karachi.jpg" alt="Mohatta Palace, Karachi" title="Mohatta Palace, Karachi" class="d-block" style="width:100%">
                             </div>    
                         </div>
                                     
@@ -477,19 +471,19 @@
                             </div>
 
                             <div class="carousel-item">
-                                <img src="image/Shalimar Gardens, Lahore - Wikipedia.jpeg" alt="Shalimar Gardens,Lahore" title="Badshahi Mosque,lahore" class="d-block" style="width:100%">
+                                <img src="image/Shalimar Bagh.jpg" alt="Shalimar Gardens,Lahore" title="Badshahi Mosque,lahore" class="d-block" style="width:100%">
                             </div>
 
                             <div class="carousel-item">
-                                <img src="image/New Food Street_ Lahore.jpeg" alt="Food Street,Lahore"  title="Badshahi Mosque,lahore" class="d-block" style="width:100%">
+                                <img src="image/hunza.jpg" alt="Food Street,Lahore"  title="Badshahi Mosque,lahore" class="d-block" style="width:100%">
                             </div>
 
                             <div class="carousel-item active">
-                                <img src="image/Sharda -Kashmir-Pakistan.jpeg" alt="Sharda, Kashmir" title="Sharda, Kashmir" class="d-block" style="width:100%">
+                                <img src="image/Neelam Valley.jpg" alt="Sharda, Kashmir" title="Sharda, Kashmir" class="d-block" style="width:100%">
                             </div>
 
                             <div class="carousel-item">
-                                <img src="image/Rati Gali Lake.jpeg" alt="Ratti Gali, Kashmir" title="Ratti Gali, Kashmir" class="d-block" style="width:100%">
+                                <img src="image/Muree Hills Pakistan.jpg" alt="Ratti Gali, Kashmir" title="Ratti Gali, Kashmir" class="d-block" style="width:100%">
                             </div>
                         </div>
                                     

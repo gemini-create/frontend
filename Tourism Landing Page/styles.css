@@ -6,29 +6,23 @@
 }
 
 header{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),url("image/faisal\ mosque.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),url("image/faisalMosque.jpg");
     background-repeat: no-repeat;
     background-attachment:scroll;
     background-size: cover;
     min-height: 100vh;  
 }
 
-.navigation{
-    display:flex;
-    justify-content:space-around;
-    padding:2rem 0 0 0;
-}
-
-.brand{
+.navbar-brand{
     font-size:1.5rem;
 }
 
-li,.brand{
+li,.navbar-brand{
     padding:0 30px;
     margin: 0 15px;
 }
 
-li>a,.brand{
+li>a,.navbar-brand{
     color:rgb(255, 255, 255);
     text-decoration: none;
 }
@@ -43,19 +37,19 @@ li>a:hover{
     color:black;
 }
 
-.navigation li>a::after{
+nav li>a::after{
     content:"";
     position:absolute;
     width:0%;
     bottom:0;
     left:0;
     transition:0.3s width , 0.3s font-size ease-in-out;
-    height:1px;
+    height:2px;
     background-color:rgb(246, 245, 250);   
 }
 
-.navigation li>a:hover::after{
-    width:100%;
+nav li>a:hover::after{
+    width:90%;
     font-size:1.3rem;
 }
 
@@ -249,7 +243,6 @@ input,textarea{
     border-radius:1rem; 
     box-shadow: 0 4px 8px rgba(0,0,0,0.3);
     height:60vh;
-    transition:transform 0.3s ease-in-out;
 }
 
 .info i {
@@ -265,11 +258,9 @@ input,textarea{
     background-color: rgb(233, 235, 241);
     border-radius:1rem; 
     box-shadow: 0 4px 8px rgba(0,0,0,0.3);
-    transition:transform 0.5s ease-in-out;
+    
 }
-.info:hover, .message-us:hover{
-    transform:scale(0.9);
-}
+
 #about-us{
     margin:4rem 0 6rem 0;
 }
@@ -306,7 +297,6 @@ input,textarea{
 }
 
 footer{
-    
     background: linear-gradient(135deg, #638be2,#0c3858);
     font-size:large;
     color:white;
